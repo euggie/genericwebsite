@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Demo Page for NexusGuard Eval
+    </title>
+  </head>
+
+  <body>
+    <h1>Demo Page for NexusGuard Eval</h1>
+    <p>
+      This is a demo page created for the purposes of evaluating
+      NexusGuard's Application Protection and DNS Protection offerings.
+    </p>
+    
+    <div class="wrapper">
+      <video id="videoPlayer" style="width: 100%;" controls></video>
+    </div>
+    
+    <script src="hls/hls.min.js"></script>
+    <script src="hls/inap-hls.js"></script>
+    <script>
+      inap_hls("videoPlayer", "video/playlist.m3u8");
+    </script>
+
+  </body>
+</html>

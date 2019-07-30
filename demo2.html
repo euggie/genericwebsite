@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Demo Page for NexusGuard Eval
+    </title>
+    <script src="//cdn.jwplayer.com/libraries/kGMewBPt.js"> </script>
+  </head>
+
+  <body>
+    <h1>Demo Page for NexusGuard Eval</h1>
+    <p>
+      This is a demo page created for the purposes of evaluating
+      NexusGuard's Application Protection and DNS Protection offerings.
+    </p>
+    
+    <div class="wrapper">
+      <video id="videoPlayer" style="width: 100%;" controls></video>
+    </div>
+    <script type="text/JavaScript">
+    var playerInstance = jwplayer("videoPlayer");
+    playerInstance.setup({
+        file: "ToS-4k-1920.mp4",
+        skin: { name: "vapor" },
+        width: "100%",
+        aspectratio: "16:9"
+    });
+    </script>
+  
+
+  </body>
+</html>
